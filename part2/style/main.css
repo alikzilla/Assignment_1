@@ -3,23 +3,30 @@
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
+
 body{
     box-sizing: border-box;
 }
+
 .container{
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
 }
+
+/*header*/
+
 .mode{
     background: #38524f;
     padding-top: 20px;
 }
+
 .mode_wrapper{
     display: flex;
     justify-content: flex-end;
     border-bottom: 1px solid #d9e1cc;
 }
+
 .mode_moon{
     border: 1px solid #d9e1cc;
     width: fit-content;
@@ -27,15 +34,18 @@ body{
     padding-right: 20px;
     margin-bottom: 4px;
 }
+
 .mode_moon img{
     position: relative;
     left: 3px;
     top: 2px;
 }
+
 .header{
     background: #38524f;
     padding-top: 30px;
 }
+
 .header_logo{
     letter-spacing: 1px;
     font-size: 30px;
@@ -44,33 +54,44 @@ body{
     color: #d9e1cc;
     margin-right: 50px;
 }
+
 .header_wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .header_nav ul{
     display: flex;
     align-items: center;
     gap: 30px;
     list-style: none;
 }
+
 .header_nav a{
     font-size: 16px;
     font-weight: 500;
     color: #d9e1cc;
     text-decoration: none;
+    transition: 0.3s;
 }
+
+.header_nav a:hover{
+    color: #00f074;
+}
+
 .header_nav li:first-child{
     border-bottom: 1px solid #d9e1cc;
     position: relative;
     top: 2.5px;
     padding-bottom: 5px;
 }
+
 .header_nav li:nth-child(3){
     display: flex;
     align-items: center;
 }
+
 .header_nav li:nth-child(3)::after{
     content: '';
     display: block;
@@ -82,15 +103,18 @@ body{
     position: relative;
     top: 2px;
 }
+
 .header_wrapper_end{
     display: flex;
     align-items: center;
     gap: 30px;
 }
+
 .header_wrapper_end img{
     width: 16px;
     height: 16px;
 }
+
 .header_cart::after{
     content: '0';
     color: #d9e1cc;
@@ -312,6 +336,13 @@ body{
     color: white;
     font-size: 20px;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.book-button:hover{
+    background-color: #00f074;
+    border: #00f074 solid;
+    color: #242628;
 }
 
 .more-button{
@@ -382,6 +413,13 @@ body{
     border: none;
     color: white;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.miss-button:hover{
+    background-color: #00f074;
+    border: #00f074 solid;
+    color: #242628;
 }
 
 .images{

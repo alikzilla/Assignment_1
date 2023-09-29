@@ -81,6 +81,10 @@ header{
     text-decoration: none;
 }
 
+.header_nav a:hover{
+    color: #00f074;
+}
+
 .header_nav li:last-child{
     border-bottom: 1px solid #d9e1cc;
     position: relative;
@@ -237,6 +241,12 @@ header{
     border: none;
     color: white;
     border-radius: 10px;
+}
+
+.miss-button:hover{
+    background-color: #00f074;
+    border: #00f074 solid;
+    color: #242628;
 }
 
 .images{
