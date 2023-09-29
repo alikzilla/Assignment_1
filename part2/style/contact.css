@@ -1,0 +1,383 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 50px 0;
+}
+
+.mode{
+    background: #38524f;
+    padding-top: 20px;
+}
+
+.mode_wrapper{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #d9e1cc;
+}
+
+.mode_moon{
+    border: 1px solid #d9e1cc;
+    width: fit-content;
+    border-radius: 10px;
+    padding-right: 20px;
+    margin-bottom: 4px;
+}
+
+.mode_moon img{
+    position: relative;
+    left: 3px;
+    top: 2px;
+}
+
+.header{
+    background: #38524f;
+    padding-top: 30px;
+}
+
+.header_logo{
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #d9e1cc;
+    margin-right: 50px;
+}
+
+.header_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.header_nav a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #d9e1cc;
+    text-decoration: none;
+}
+
+.header_nav li:last-child{
+    border-bottom: 1px solid #d9e1cc;
+    position: relative;
+    top: 2.5px;
+    padding-bottom: 5px;
+}
+
+.header_nav li:nth-child(3){
+    display: flex;
+    align-items: center;
+}
+
+.header_nav li:nth-child(3)::after{
+    content: '';
+    display: block;
+    background: url('../assets/dropdown.png');
+    background-size: cover;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.header_wrapper_end{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header_wrapper_end img{
+    width: 16px;
+    height: 16px;
+}
+
+.header_cart::after{
+    content: '0';
+    color: #d9e1cc;
+    font-size: 10px;
+    border: 1px solid #d9e1cc;
+    padding: 3px;
+    border-radius: 60%;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    background: #38524f;
+}
+
+/*contact*/
+
+.contact{
+    background-color: #242628;
+    padding: 100px 0;
+    color: #d7dfca;
+}
+
+.contact-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+.contact-info{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.contact-inputs{
+    width: calc(60% - 30px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    font-size: 25px;
+}
+
+.contact-inputs input{
+    width: 500px;
+    height: 50px;
+    background-color: #242628;
+    border: white solid 1px;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.textarea{
+    width: 700px;
+    height: 250px;
+    resize: vertical;
+    background-color: #242628;
+    border: white solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+/*miss recipes*/
+
+.miss-recipe{
+    padding: 100px 0;
+    position: relative;
+    height: 627px;
+    background-color: #242628;
+}
+
+.back-image{
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    z-index: 0  ;
+    opacity: 0.5;
+}
+
+.miss-text{
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.input-wrapper{
+    z-index: 1;
+    display: flex;
+    gap: 30px;
+}
+
+.input-wrapper input{
+    width: 400px;
+    z-index: 1;
+    height: 50px;
+    background-color: #242628;
+    border: #38524f solid;
+    color: #d9e1cc;
+    font-size: 20px;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.input-wrapper button{
+    z-index: 1;
+    width: 100px;
+    background-color: #088c7c;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.images{
+    display: flex;
+    position: relative;
+    top: 200px;
+    left: -250px;
+    z-index: 0;
+}
+
+.images img{
+    height: 300px;
+    width: 316px;
+    transition: 0.3s;
+}
+
+.images img:hover{
+    opacity: 0.7;
+}
+
+/*Footer*/
+
+footer #body img {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #242628;
+    padding: 100px 0;
+    width: 100%;
+}
+
+.dividing {
+    margin: 50px auto;
+}
+
+footer #head, #body, #foot {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+footer #head {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer #head div {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+}
+
+footer #head h4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #d7dfca;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer #head p, footer #head a {
+    font-size: 20px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 10px 0;
+}
+
+footer #head a {
+    color: white;
+    margin: 10px 0;
+}
+
+footer #head a:hover {
+    color: #008a7a;
+}
+
+footer #head input {
+    font-size: 20px;
+    color: white;
+    width: calc(100% - 14px);
+    padding: 7px;
+    margin: 9px 0;
+    border: solid 1px #e2e2e2;
+    border-radius: 5px;
+    background-color: white;
+}
+
+footer #head button {
+    width: 100%;
+    padding: 7px 0;
+    margin-top: 9px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #d7dfca;
+    background-color: #40544c;
+    transition: 0.3s;
+}
+
+footer #head button:hover {
+    color: white;
+    background-color: #088c7c;
+}
+
+footer #body, footer #body nav, footer #body div, footer #foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer #body nav {
+    width: 350px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer #body a {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+footer #body a:hover {
+    color: #008a7a;
+}
+
+footer #foot p {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer #foot a {
+    text-decoration: underline;
+}
+
+footer #foot a:hover {
+    color: #008a7a;
+    text-decoration: none;
+}

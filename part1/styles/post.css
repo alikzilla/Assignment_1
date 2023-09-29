@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Bitter', serif;
+}   
+
+body{
+    box-sizing: border-box;
+    background-color: rgb(181,175,150);
+}
+
+.container{
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.header-wrapper{
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 50px 0;
+   
+}
+
+.header-title{
+    font-size: 25px;
+    font-family: arial;
+    color: rgb(68,68,68);
+}
+
+.header-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.header-nav-el a{
+    color: rgb(68,68,68);
+    transition: 0.5s;
+    font-family: arial;
+}
+
+.header-nav-el a:hover{
+    color: black;
+}
+
+.dividing-block{
+    height: 13px;
+    width: 100%;
+    background-color: rgb(204,204,204);
+    margin-bottom: 30px;
+}
+
+.blog-wrapper{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.main-blog{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 75%;
+}
+
+.blog-block{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.block-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(230,230,230);
+    gap: 70px;
+    padding: 3em;
+}
+
+.block-fucntions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.block-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.icon-wrapper{
+    width: 30px;
+}
+
+.button-circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.block-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2  0px;
+    padding: 1em 3em;
+    font-size: 20px;
+}
+
+.block-title{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.block-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.block-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    color: rgb(68,68,68);
+}
+
+.block-text-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.blog-nav{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.link-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.nav-likes{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.blog-related{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 20px);
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.related-block{
+    font-size: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comments-block{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3em;
+    gap: 30px;
+    width: calc(100% - 6em);
+}
+
+.comment-user{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.divisor{
+    background-color: grey;
+    width: 100%;
+    height: 1px;
+}
+
+.reply-button{
+    background-color: rgb(230,237,206);
+    color: rgb(143,147,127);
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.reply-button:hover{
+    color: rgb(230,237,206);
+    background-color: rgb(143,147,127)  ;
+}
+
+.comment-input{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.comment-textarea{
+    padding: 3em;
+}
+
+.comment-submit{
+    background-color: grey;
+    width: calc(100% - 6em);
+    padding: 3em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.textarea{
+    font-size: 25px;
+    width: 100%;
+    resize: vertical;
+    border: none;
+}
+
+.submit-button{
+    background-color: darkblue;
+    color: aliceblue;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.nav-blogs{
+    width: calc(25% - 30px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nav-block{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.nav-title{
+    background-color: rgb(204,204,204);
+    padding: 2em;
+    font-size: 20px;
+}
+
+.footer-text{
+    text-align: center;
+    font-size: 20px;
+    height: 50px;
+}
