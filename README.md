@@ -1,2 +1,2 @@
-# Assignment_1
-two layouts of sites
+# Assignment
+assignment - two layouts of sites for course INF-231
